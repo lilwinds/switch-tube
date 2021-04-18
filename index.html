@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SwitchTube</title>
+		<script src="jquery.min.js"></script>
+		<script src="gamepad.js"></script>
+		<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+		<script src="app.js"></script>
+		<link href="img/fav.ico" rel="shortcut icon" type="image/x-icon">
+		<link href="style.css" rel="stylesheet">
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112999876-1"></script>
+		<script>
+			var _0x3a3f=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x67\x6F\x6F\x67\x6C\x65\x61\x70\x69\x73\x2E\x63\x6F\x6D\x2F\x61\x75\x74\x68\x2F\x79\x6F\x75\x74\x75\x62\x65","\x63\x6C\x69\x65\x6E\x74\x3A\x61\x75\x74\x68\x32","\x6C\x6F\x61\x64","\x67\x65\x74\x41\x75\x74\x68\x49\x6E\x73\x74\x61\x6E\x63\x65","\x61\x75\x74\x68\x32","\x6C\x69\x73\x74\x65\x6E","\x69\x73\x53\x69\x67\x6E\x65\x64\x49\x6E","\x67\x65\x74","\x63\x75\x72\x72\x65\x6E\x74\x55\x73\x65\x72","\x63\x6C\x69\x63\x6B","\x23\x73\x69\x67\x6E\x2D\x69\x6E\x2D\x6F\x72\x2D\x6F\x75\x74\x2D\x62\x75\x74\x74\x6F\x6E","\x74\x68\x65\x6E","\x33\x32\x36\x31\x31\x32\x36\x35\x33\x37\x38\x38\x2D\x36\x6F\x61\x37\x65\x6A\x73\x63\x39\x64\x67\x70\x72\x6F\x6A\x38\x73\x6C\x69\x72\x6E\x6C\x6A\x39\x72\x6D\x39\x61\x6F\x61\x70\x61\x2E\x61\x70\x70\x73\x2E\x67\x6F\x6F\x67\x6C\x65\x75\x73\x65\x72\x63\x6F\x6E\x74\x65\x6E\x74\x2E\x63\x6F\x6D","\x69\x6E\x69\x74","\x63\x6C\x69\x65\x6E\x74","\x73\x69\x67\x6E\x4F\x75\x74","\x72\x65\x6D\x6F\x76\x65","\x2E\x75\x73\x65\x72\x5F\x69\x6D\x61\x67\x65","\x74\x61\x62\x6C\x65\x2E\x73\x75\x62\x73\x63\x72\x69\x70\x74\x69\x6F\x6E\x73","\x68\x69\x64\x65","\x23\x73\x75\x62\x73\x63\x72\x69\x70\x74\x69\x6F\x6E\x73","\x73\x69\x67\x6E\x49\x6E","\x68\x61\x73\x47\x72\x61\x6E\x74\x65\x64\x53\x63\x6F\x70\x65\x73","\x53\x69\x67\x6E\x20\x6F\x75\x74","\x68\x74\x6D\x6C","\x59\x6F\x75\x20\x61\x72\x65\x20\x63\x75\x72\x72\x65\x6E\x74\x6C\x79\x20\x73\x69\x67\x6E\x65\x64\x20\x69\x6E\x20\x61\x73\x20","\x69\x67","\x77\x33","\x2E\x20\x28\x3C\x61\x20\x68\x72\x65\x66\x3D\x27\x23\x27\x20\x6F\x6E\x63\x6C\x69\x63\x6B\x3D\x27\x6D\x79\x43\x68\x61\x6E\x6E\x65\x6C\x28\x29\x27\x3E\x76\x69\x65\x77\x20\x63\x68\x61\x6E\x6E\x65\x6C\x3C\x2F\x61\x3E\x29","\x23\x61\x75\x74\x68\x2D\x73\x74\x61\x74\x75\x73","\x61\x63\x63\x65\x73\x73\x5F\x74\x6F\x6B\x65\x6E","\x5A\x69","\x23\x79\x74\x2D\x61\x75\x74\x68\x6F\x72\x69\x7A\x65","\x70\x72\x65\x70\x65\x6E\x64\x54\x6F","\x3C\x69\x6D\x67\x20\x63\x6C\x61\x73\x73\x3D\x22\x75\x73\x65\x72\x5F\x69\x6D\x61\x67\x65\x22\x20\x73\x72\x63\x3D\x22","\x50\x61\x61","\x22\x3E","\x53\x69\x67\x6E\x20\x69\x6E","\x53\x69\x67\x6E\x20\x69\x6E\x20\x74\x6F\x20\x61\x75\x74\x68\x6F\x72\x69\x7A\x65\x20\x79\x6F\x75\x72\x20\x59\x6F\x75\x54\x75\x62\x65\x20\x61\x63\x63\x6F\x75\x6E\x74\x20\x77\x69\x74\x68\x20\x53\x77\x69\x74\x63\x68\x54\x75\x62\x65\x2E\x20\x28\x59\x6F\x75\x20\x6D\x61\x79\x20\x68\x61\x76\x65\x20\x74\x6F\x20\x63\x6C\x69\x63\x6B\x20\x74\x68\x65\x20\x6C\x6F\x67\x6F\x20\x74\x6F\x20\x72\x65\x66\x72\x65\x73\x68\x20\x61\x66\x74\x65\x72\x77\x61\x72\x64\x73\x2E\x29"];var GoogleAuth;var clientToken;var SCOPE=_0x3a3f[0];function handleClientLoad(){gapi[_0x3a3f[2]](_0x3a3f[1],initClient)}function initClient(){gapi[_0x3a3f[14]][_0x3a3f[13]]({"\x61\x70\x69\x4B\x65\x79":key,"\x63\x6C\x69\x65\x6E\x74\x49\x64":_0x3a3f[12],"\x73\x63\x6F\x70\x65":SCOPE})[_0x3a3f[11]](function(){GoogleAuth= gapi[_0x3a3f[4]][_0x3a3f[3]]();GoogleAuth[_0x3a3f[6]][_0x3a3f[5]](updateSigninStatus);var _0xfd60x6=GoogleAuth[_0x3a3f[8]][_0x3a3f[7]]();setSigninStatus();$(_0x3a3f[10])[_0x3a3f[9]](function(){handleAuthClick()})})}function handleAuthClick(){if(GoogleAuth[_0x3a3f[6]][_0x3a3f[7]]()){GoogleAuth[_0x3a3f[15]]();$(_0x3a3f[17])[_0x3a3f[16]]();$(_0x3a3f[18])[_0x3a3f[16]]();$(_0x3a3f[20])[_0x3a3f[19]]()}else {GoogleAuth[_0x3a3f[21]]()}}function setSigninStatus(_0xfd60x9){var _0xfd60x6=GoogleAuth[_0x3a3f[8]][_0x3a3f[7]]();var _0xfd60xa=_0xfd60x6[_0x3a3f[22]](SCOPE);if(_0xfd60xa){$(_0x3a3f[10])[_0x3a3f[24]](_0x3a3f[23]);$(_0x3a3f[29])[_0x3a3f[24]](_0x3a3f[25]+ _0xfd60x6[_0x3a3f[27]][_0x3a3f[26]]+ _0x3a3f[28]);clientToken= _0xfd60x6[_0x3a3f[31]][_0x3a3f[30]];$(_0x3a3f[34]+ _0xfd60x6[_0x3a3f[27]][_0x3a3f[35]]+ _0x3a3f[36])[_0x3a3f[33]](_0x3a3f[32]);loadSubscriptions()}else {$(_0x3a3f[10])[_0x3a3f[24]](_0x3a3f[37]);$(_0x3a3f[29])[_0x3a3f[24]](_0x3a3f[38])}}function updateSigninStatus(_0xfd60x9){setSigninStatus()}
+		</script>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		  (adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-6123155888274141",
+			enable_page_level_ads: true
+		  });
+		</script>
+	</head>
+	
+	<body>
+		<div class="remove" id="yt-authorize">
+			<button id="sign-in-or-out-button" style="margin-left: 25px">Sign in</button>
+			<div id="auth-status" style="display: inline; padding-left: 25px">Sign in to authorize your YouTube account with SwitchTube. (You may have to click the logo to refresh afterwards.)</div><hr>
+		</div>
+		<div id="fb-root"></div>
+		<div class="container">
+			<a id="logo-link" href="https://sites.google.com/site/ytnintendoswitch/" target="_top">
+				<img alt="SwitchTube" src="img/SwitchTube.png" style="height: 120px;">
+			</a>
+			<div class="jumbotron">
+				<a class="remove trending" href="#">View Trending</a>
+				<br />
+				<select class="remove" id="id-type">
+					<option value="video">Video</option>
+					<option value="channel">Channel</option>
+					<option value="playlist">Playlist</option>
+				</select><br />
+				<div class="input-append">
+					<form id="vidID">
+						<input class="span5 get-video" autocomplete="off" id="videourl" type="text" placeholder="Enter YouTube Video ID">
+						<input class="btn btn-success" id="url-submit" type="submit" value="Load" />
+					</form>
+				</div>
+				<p class="example">Example: <a href="#" onclick="getVideo('-FCYE87P5L0')">-FCYE87P5L0</a></p>
+			</div>
+			<div class="row-fluid" id="custom" style="display:none;">
+				<div class="span12" style="text-align:center;">
+					<div id="ytvideo">
+					</div>   
+				</div>
+			</div>
+			<div class="jumbotron" id="or-search">
+				<h2>or:</h2>
+				<div class="input-append">
+					<select id="search-type">
+						<option value="all">All</option>
+						<option value="video">Videos</option>
+						<option value="channel">Channels</option>
+						<option value="playlist">Playlists</option>
+					</select>
+					<label>
+						<br>
+						<form class="remove" id="search-yt">
+							<input autocomplete="off" id="query" placeholder="Search" type="text"/>
+							<input class="btn btn-success" id="search-button" type="submit" value="Search" />
+						</form>
+					</label>    
+				</div>
+				<div id="container">
+					<h3 id="search-results"></h3>
+					<ul id="results"></ul>
+				</div>
+			</div>
+			<div class="jumbotron remove" id="subscriptions" style="display: none;">
+				<h2>Subscriptions</h2>
+			</div>
+		</div>
+		<div style="text-align: center;">
+			Created by <a class="creator" href="#">Ep8Script</a><br>
+			<a href="https://gbatemp.net/threads/tool-website-for-watching-most-youtube-videos-on-the-switch.494796/" target="_top">GBATemp</a> | <a href="https://github.com/Ep8Script/NintendoSwitchTube/" target="_top">Source</a>
+			<br><br>
+			<div class="patreon">
+				Support me on Patreon: <a href="https://www.patreon.com/ep8script">https://www.patreon.com/ep8script</a>
+				<ul>
+					My patrons: 
+					<li>jjbredesen</li>
+					<li>Thomas McClellan</li>
+					<li>vgmoose</li>
+				</ul>
+			</div>
+			<br>
+			<a class="give-feedback" href="#">SEND FEEDBACK</a>
+			<div class="feedback-form" style="display: none;">
+				<h3>Feedback</h3>
+				<p>Please feel free to use the form below to give me some suggestions to add to this website<br>or simply let me know what you think of it! Please note that this is <b>not</b> a comment section.<br>If you would like to further motivate me to work on features such as comments, please consider donating to my patreon!</p>
+				<form id="feedback" onsubmit="return sendFeedback()">
+					<input autocomplete="off" id="feedback-name" type="text" placeholder="Name">
+					<br>
+					<textarea id="feedback-message" placeholder="Message" rows="6"></textarea>
+					<br>
+					<input class="btn btn-success" id="send-feedback" type="submit" value="Send" />
+				</form>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+	</body>
+</html>
